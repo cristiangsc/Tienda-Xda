@@ -1,0 +1,22 @@
+    .banner {
+        z-index: 1000;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 20% 10% !important;
+        }
+        @include respond-to($bp-md) {
+            img {
+                object-position: 50% 30%;
+            }
+        }
+        @include respond-to($bp-lg) {
+            order: 1;
+            grid-column: 2/4;
+            grid-row: 1/4;
+            img {
+                height: 90vh;
+            }
+        }
+    }

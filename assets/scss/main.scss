@@ -1,0 +1,21 @@
+// @import 'abstracts';
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+// @import 'vendors/bootstrap';
+@import "vendors/bootstrap5.1.3/bootstrap.scss";
+// @import 'base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/keyframe';
+// @import 'components';
+@import 'components/navigation';
+@import 'components/brand';
+@import 'components/button';
+// @import 'layout';
+@import 'layout/form';
+@import 'layout/banner';
+// import pages
+@import 'pages/home';
+// @import 'themes';
+// @import 'themes';

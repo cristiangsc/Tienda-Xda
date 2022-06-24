@@ -1,0 +1,13 @@
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 70px;
+    background: $smoky-black;
+    color: $white;
+    font-size: $x-large;
+    & p {
+        margin: 0 auto;
+    }
+}

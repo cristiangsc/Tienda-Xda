@@ -1,0 +1,93 @@
+        .xda-container {
+            display: grid;
+            grid-template-rows: 35vh 35vh 20vh;
+            @include respond-to($bp-md) {
+                grid-template-rows: 45vh 25vh 20vh;
+            }
+            @include respond-to($bp-lg) {
+                grid-template-columns: 40% 60%;
+                grid-template-rows: 80% 20%;
+                & .texto {
+                    &__titulo p {
+                        padding: 45px 45px 5px !important;
+                        font-size: $xxx-large !important;
+                    }
+                    &__description p {
+                        padding-left: 45px !important;
+                        width: 75% !important;
+                    }
+                }
+            }
+            & .texto {
+                &__titulo p {
+                    padding: 15px 20px 0px 25px;
+                    font-size: $xx-large;
+                    font-weight: $bold;
+                    font-family: $old-standard;
+                }
+                &__description p {
+                    font-weight: $regular;
+                    color: $granite-gray;
+                    padding: 0 0 0 25px;
+                    width: 100%;
+                }
+                &__button .boton {
+                    font-weight: $bold;
+                    width: 150px;
+                    border-radius: 0%;
+                    margin-top: 5px;
+                    margin-left: 25px;
+                    @include respond-to($bp-lg) {
+                        margin-left: 45px;
+                    }
+                }
+            }
+            .formulario {
+                display: grid;
+                grid-template-columns: 90% 10%;
+                @include respond-to($bp-lg) {
+                    order: 3;
+                }
+                &__form {
+                    background: $smoky-black;
+                    padding: 20px 50px;
+                    color: $white;
+                    & p {
+                        font-family: $old-standard;
+                        font-size: $xx-large;
+                        font-weight: $bold;
+                    }
+                    & label {
+                        font-family: $old-standard;
+                    }
+                    & .email input {
+                        width: 100%;
+                        border-radius: 0 !important;
+                    }
+                }
+                .suscribir {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: $bold;
+                    font-size: $xx-large;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 0%;
+                    span {
+                        font-family: $old-standard;
+                        transform: rotate(90deg);
+                    }
+                    &:hover {
+                        border: 1px solid $granite-gray;
+                        background-color: $smoky-black;
+                        color: $white;
+                    }
+                    &:focus {
+                        background-color: $granite-gray;
+                    }
+                }
+            }
+        }

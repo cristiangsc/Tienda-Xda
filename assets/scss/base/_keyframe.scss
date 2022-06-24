@@ -1,0 +1,26 @@
+.text {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.color:hover {
+    color: rgb(202, 94, 31) !important;
+    transition: color 2s linear, transform 2s;
+}
+
+.title:hover {
+    font-size: 18px;
+    color: rgb(202, 94, 31);
+    transition: font-size 2s linear;
+}
